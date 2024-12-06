@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 60px;
+  background-color: #ffda6c;
+  padding: 5px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__title {
+  font-family: "Press Start 2P", cursive;
+  color: #323232;
+  font-size: 20px;
+}
+
+.main {
+  font-family: "Press Start 2P", cursive;
+  .addStudent {
+    margin-bottom: 50px;
+    border: 2px solid #191919;
+    border-radius: 10px;/
+    padding: 20px; 
+    background-color: #f9f9f9;
+
+    h2{
+      text-align: center;
+      color: #353535;
+    }
+
+    .addStudent__title {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 15px; /* Отступ снизу для заголовка */
+      }
+      
+    }
+
+    .addStudent mb-4 {
+      box-shadow: 6px 10px 18px rgb(202, 202, 202);
+    }
+
+    .addStudent__form-container {
+      margin-top: 30px;
+      font-family: "Press Start 2P", cursive;
+      display: flex;
+      gap: 20px; /* Промежуток между колонками */
+    }
+
+    .addStudent__form__block {
+      display: flex;
+      flex-direction: column;
+
+      .addStudent__form__label {
+        margin-bottom: 5px; /* Отступ между меткой и полем ввода */
+      }
+
+      .addStudent__form__input {
+        padding: 10px;
+        border: 1px solid #ccc; /* Параметры поля ввода */
+        border-radius: 5px; /* Закругление углов у полей ввода */
+      }
+    }
+
+    .addStudent__form__submit {
+      text-align: center; /* Центрирование кнопки */
+    }
+
+    .addStudent__form__button {
+      margin: 20px;
+      padding: 15px 25px;
+      background-color: #0056b3; /* Цвет фона для кнопки */
+      color: #fff; /* Цвет текста */
+      font-weight: bold; /* Жирный текст */
+      border: none; /* Без границ */
+      border-radius: 5px; /* Закругление углов */
+      cursor: pointer; /* Указатель при наведении */
+      transition: background-color 0.3s; /* Плавный переход для фона при наведении */
+    }
+
+    
+
+    .addStudent__form__button:hover {
+      background-color: #9dff00;
+      color: #000;
+      transition: all 0.3s ease-out;
+      /* Изменение фона при наведении */
+    }
+  }
+
+  .studentsTable {
+    border: none;
+    box-shadow: 6px 10px 18px rgb(202, 202, 202);
+    width: 100%;
+    border-collapse: collapse;
+
+    .studentsTable__thead {
+      border: none;
+      padding: 5px 10px;
+      border: 1px solid #ffe3e3;
+    }
+    .studentsTable__th {
+      padding: 10px 5px;
+      border: 2px solid #ffe3e3;
+    }
+
+    .studentsTable__td {
+      padding: 10px 5px;
+      border: 2px solid #ffe3e3;
+    }
+
+    .table table-bordered studentsTable mb-4 {
+      border-color: #ffe3e3;
+    }
+
+    .studentsTable__tr {
+      border-color: #ffe3e3;
+      .studentsTable__td {
+        button {
+          width: 100%;
+          padding: 10px 3px;
+          margin: 0 auto;
+          color: #ffe3e3;
+          font-weight: 700;
+          background-color: rgb(255, 119, 41);
+          border: none;
+          cursor: pointer; /* Указатель при наведении */
+          transition: background-color 0.3s; /* Плавный переход для фона при наведении */
+        }
+
+        button:hover {
+          background-color: rgb(255, 0, 0); /* Изменение фона при наведении */
+        }
+      }
+    }
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sorted {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.addStudent__form-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+  gap: 10px; /* Интервал между полями */
+  align-items: center;
+  justify-content: center;
+}
+
+.addStudent__form__block {
+  display: flex;
+  flex-direction: column;
+  width: 400px; /* Установите фиксированную ширину блока */
+ 
+}
+
+.addStudent__form__input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Параметры поля ввода */
+  border-radius: 5px; /* Закругление углов у полей ввода */
+  width: 100%; /* Поля ввода занимают всю ширину блока */
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  text-align: center;
+}
+
+
+.pagination-controls{
+  align-items: center;
+  justify-content: center;
+}
+
+.table{
+  text-align: center;
+}
+
+#pageSize{
+  align-self: center;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
